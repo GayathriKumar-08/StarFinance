@@ -1,0 +1,49 @@
+<div class="container-md mt-3">
+    <div>
+        <nav class="navbar navbar-expand-sm">
+            <div class="navbar-header">
+                <span><img class="logo" src="assets\images\logoimg.png"></span><label
+                    style="color:#581845; font-size: 30px;">Star Finance</label>
+            </div>
+        </nav>
+    </div>
+    <div class="line"></div>
+</div>
+<div class="loginbox" style="justify-content: center;">
+    <h3 style="text-align: center;">Sign-in</h3>
+    <br>
+    <div>
+        <form name="form" [formGroup]="form">
+            <!-------------------------------------------------------------------------------------------------------------------->
+            <div class="form-group">
+                <input type="password" formControlName="empid" class="form-control" placeholder="Employee-Id" value=""
+                    [ngClass]="{'is-invalid': form.get('empid').touched && form.get('empid').invalid}" />
+                <div *ngIf="{'is-invalid': form.get('empid').touched && form.get('empid').invalid}"class="invalid-feedback">
+                    <div *ngIf="form.get('empid').errors.required" style="color: crimson;">Employee-Id is required*</div>
+                    <div *ngIf="form.get('empid').errors.pattern" style="color: crimson;">Employee-Id is incorrect*
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------->
+            <br>
+            <div class="form-group">
+                <input type="password" formControlName="password" class="form-control" placeholder="password *" value=""
+                    [ngClass]="{'is-invalid':
+                   form.get('password').touched && form.get('password').invalid}" />
+                <div *ngIf="{'is-invalid':form.get('password').touched && form.get('password').invalid}"
+                    class="invalid-feedback">
+                    <div *ngIf="form.get('password').errors.required" style="color: crimson;">Required*</div>
+                    <div *ngIf="form.get('password').errors.minlength" style="color: crimson;">password is week*</div>
+                    <div *ngIf="form.get('password').errors.maxlength" style="color: crimson;">Password is strong</div>
+                </div>
+            </div>
+        </form>
+
+        <div>
+            <div style="margin-left:25%;margin-top:8%">
+               
+                <a routerLink="/changepassword" style="color:#581845;font-size:20px;margin-left: 70px;">Change Password</a> 
+            </div>
+        </div>
+        <button type="button" class="otpbtn" style="margin-top:5%;margin-bottom: 10px;margin-left: 40%;" (click)="onClick()">Login</button>
+    </div>
