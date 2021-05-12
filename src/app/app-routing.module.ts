@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChangepnoComponent } from './components/changepno/changepno.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { EmicalComponent } from './components/emical/emical.component';
+import { KycdocumentComponent } from './components/kycdocument/kycdocument.component';
+import { KycrulebookComponent } from './components/kycrulebook/kycrulebook.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { LoanformComponent } from './components/loanform/loanform.component';
 import { LoginComponent } from './components/login/login.component';
@@ -22,6 +25,9 @@ const routes: Routes = [
   {path:'changepno', component:ChangepnoComponent},
   {path:'loanform', component:LoanformComponent},
   {path:'dashboard', component:DashboardComponent},
+  {path:'kycdocument', component:KycdocumentComponent},
+  {path:'kycruleguide', component:KycrulebookComponent},
+  {path:'emical', component:EmicalComponent}
 
 ];
 

@@ -14,6 +14,10 @@ import { LoanformComponent } from './components/loanform/loanform.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { ChangepnoComponent } from './components/changepno/changepno.component';
 import { SamplenavComponent } from './components/samplenav/samplenav.component';
+import { KycdocumentComponent } from './components/kycdocument/kycdocument.component';
+import { NavsectionComponent } from './components/navsection/navsection.component';
+import { KycrulebookComponent } from './components/kycrulebook/kycrulebook.component';
+import { EmicalComponent } from './components/emical/emical.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { SamplenavComponent } from './components/samplenav/samplenav.component';
     LandingComponent,
     ChangepnoComponent,
     SamplenavComponent,
+    KycdocumentComponent,
+    NavsectionComponent,
+    KycrulebookComponent,
+    EmicalComponent,
   ],
   imports: [
     BrowserModule,

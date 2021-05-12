@@ -1,0 +1,67 @@
+<div>
+    <app-navsection></app-navsection>
+</div>
+<div class="container-fluid">
+    <div style="margin-top:100px;margin-left: 150px;">
+        <h5 style="color: #581845;font-weight: bold;margin-left:180px;">Upload Document</h5>
+        <div style="margin-left:180px; color:#581845">Document can be in PDF | JPG | JPEG | BMP | XLS | XLSX | DOC |
+            DOCX. Document size should be less than 4MB</div>
+    </div><br>
+    <div class="box" style="padding: 30px;margin-left: 350px;">
+        <div>
+            <table>
+                <tr style="color: #581845;">Select Your Document Type*</tr><br>
+                <tr> <input type="radio" name="rb"value="KYC" style="color: #581845;">&nbsp;KYC &nbsp;
+                    <input type="radio" name="rb" value="Photograph" style="color: #581845;">&nbsp;Photograph &nbsp;
+                </tr>
+                <hr class="line">
+            </table>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul>
+                            <li><input type="radio" name="rb1" value="Aadhar Card" style="color: #581845;"> Aadhar Card &nbsp;</li>
+                            <br>
+                            <li><input type="radio" name="rb1"value="PAN Card" style="color: #581845;"> PAN Card &nbsp;</li><br>
+                            <li><input type="radio" name="rb1" value="Driving License" style="color: #581845;"> Driving License
+                                &nbsp;</li><br>
+                         
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li><input type="radio" name="rb1" value="Gass Bill" style="color: #581845;"> Gass Bill &nbsp;</li><br>
+                            <li><input type="radio" name="rb1" value="Postapaid Bill" style="color: #581845;"> Postapaid Bill
+                                &nbsp;</li><br>
+                            <li><input type="radio" name="rb1" value="Electricity Bill" style="color: #581845;"> Electricity Bill
+                                &nbsp;</li><br>
+                                <li><input type="radio" name="rb1"  value="Pay Slip " style="color: #581845;"> Pay Slip &nbsp;</li>
+                        </ul>
+                    </div>
+                </div><br>
+
+                <div>
+                    <p style="text-align: center;">
+                        Please Select the proofs that want to submit | For any queries refer or
+                        For Uploading the document refer KYC Rule Guide | <a routerLink="/kycrulebook">KYC Rule Guide</a>
+                    </p>
+                </div>
+                <br>
+                <div class=row>
+                    <div class="col-sm-6" style="margin-bottom: 30px;">
+                        <div style="margin-left: 30px;">
+                            <img class="propic1" [src]="urllink">
+                            <input type="file" class="btn btn-sm" (change)="selectFiles($event)" style="width:200px;">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div style="margin-top:170px;"><br><button class="btn">Submit Documents</button></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

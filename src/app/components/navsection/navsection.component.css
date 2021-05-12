@@ -8,6 +8,14 @@ button:focus
     outline:none
 }
 
+.otpbtn
+{ 
+   background-color: #581845;
+   width:100px;
+   padding:5px;
+   border-radius: 1.5em;
+   color:white;
+}
 #header {
     height: 70px;
     transition: all 0.5s;
@@ -134,44 +142,7 @@ button:focus
     left: 100%;
     visibility: visible;
   }
-  .loginbox
-  {
-      background-color:#BFB9C1;
-      border:1px solid grey;
-      width:50%;
-      height:40%;
-      margin-top:200px;
-      margin-left:30%;
-      padding:25px;
-      box-shadow: 5px 5px 5px grey;
-      color:#581845
-  }
-  .otpbtn
-  { 
-     background-color: #581845;
-     width: 50%;
-     margin-left: 150px;
-     margin-bottom: 20px;
-     padding:10px;
-     border-radius:1.5rem;;
-     color:white;
-  }
-  .line2
-  {
-      padding:10px;
-      margin:10%;
-      margin-right: 30%;
-      border: none;
-      width:70%;
-  }
-  button:focus
-  {
-      outline:none
-  }
-  input:focus
-  {
-         outline: none;
-         border: none;
-  }
+
+
 
   
